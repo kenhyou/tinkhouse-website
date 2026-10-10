@@ -12,7 +12,9 @@ index.html            # the whole site (single page)
 404.html              # GitHub Pages not-found page
 assets/css/style.css  # design tokens (colours, fonts) live in :root at the top
 assets/js/main.js     # mobile menu, header border, footer year
-assets/img/           # logo.svg, favicon.svg, og-image.png (1200×630 link preview)
+assets/img/           # logo.png, favicon-32x32.png, apple-touch-icon.png, og-image.png (1200×630 link preview)
+favicon.ico           # legacy favicon (browsers request /favicon.ico)
+brand/                # original high-res logo artwork (source for the icons above)
 CNAME                 # custom domain for GitHub Pages
 robots.txt, sitemap.xml
 ```
@@ -27,7 +29,7 @@ python3 -m http.server 8000
 ## Before launch
 
 - [ ] Make sure `contact@tinkhouse.com` receives mail (Google Workspace alias). It appears in `index.html` (hero button, contact section, JSON-LD).
-- [ ] Swap in the final logo/colours if they change: `assets/img/logo.svg`, `assets/img/favicon.svg`, colour tokens in `assets/css/style.css`, then re-export `assets/img/og-image.png`.
+- [ ] If the logo changes: replace `brand/tinkhouse-mark-source.png`, regenerate `assets/img/logo.png`, `favicon-32x32.png`, `apple-touch-icon.png` and `/favicon.ico`, then re-export `assets/img/og-image.png`.
 - [ ] Add legal entity name / ABN to the footer once registered.
 
 ## Market figures

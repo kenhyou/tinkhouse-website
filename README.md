@@ -26,7 +26,7 @@ python3 -m http.server 8000
 
 ## Before launch
 
-- [ ] Confirm the contact email. `hello@tinkhouse.com` is a placeholder used in `index.html` (hero button, contact section, JSON-LD).
+- [ ] Make sure `contact@tinkhouse.com` receives mail (Google Workspace alias). It appears in `index.html` (hero button, contact section, JSON-LD).
 - [ ] Swap in the final logo/colours if they change: `assets/img/logo.svg`, `assets/img/favicon.svg`, colour tokens in `assets/css/style.css`, then re-export `assets/img/og-image.png`.
 - [ ] Add legal entity name / ABN to the footer once registered.
 

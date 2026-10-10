@@ -4,11 +4,15 @@ Company introduction page for **Tink House** — a Sydney-based company building
 The page is used to introduce the company (primarily to investors), so it focuses on mission, opportunity and what we're building rather than sales.
 
 Plain static HTML/CSS with no build step, hosted on GitHub Pages.
+The header and footer are repeated in each page's HTML — update all three pages when changing them.
+Sub-pages use root-relative paths (`/assets/...`), so preview with a local server rather than opening the files directly.
 
 ## Structure
 
 ```
-index.html            # the whole site (single page)
+index.html            # home page (company intro for investors)
+ai-training/          # AI training service page
+marketing/            # marketing consulting & management page
 404.html              # GitHub Pages not-found page
 assets/css/style.css  # design tokens (colours, fonts) live in :root at the top
 assets/js/main.js     # mobile menu, header border, footer year
